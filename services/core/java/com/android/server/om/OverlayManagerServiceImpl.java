@@ -435,7 +435,7 @@ final class OverlayManagerServiceImpl {
         // Team Substratum: Disable this as this is a security vulnerability and a
         // memory-limited partition.
         if ((overlayPackage.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
-            return STATE_NOT_APPROVED_COMPONENT_DISABLED;
+            return STATE_APPROVED_ENABLED;
         }
 
         // STATE 3 CHECK: If the overlay only modifies resources explicitly granted by the
